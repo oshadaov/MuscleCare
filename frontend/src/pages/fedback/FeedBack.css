@@ -1,0 +1,156 @@
+.feedback-page {
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 3rem 0;
+}
+
+.feedback-form-container{
+  background-image: url('../../assets/volume-abstract-graphic-loneliness-desk.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.left {
+  display: flex;
+ margin: 15px;
+  gap: 2rem;
+  
+
+}
+
+.feedback-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1d4ed8;
+  margin-bottom: 1rem;
+}
+
+.feedback-description {
+  font-size: 1.25rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.feedback-image {
+  width: 600px;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+
+
+
+.feedback-form-container {
+  background-color: var(--secondary-background-color);
+
+  width: 750px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Title */
+.feedback-form-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1d4ed8;
+  margin-bottom: 1rem;
+}
+
+/* Success & Error Messages */
+.feedback-success,
+.feedback-error {
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.feedback-success {
+  background: #d1fae5;
+  color: #047857;
+  border: 1px solid #10b981;
+}
+
+.feedback-error {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #dc2626;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+/* Inputs */
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+    background:var(--background-color);
+    transition: border-color 0.3s ease;
+}
+
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  background: #1d4ed8;
+  color: white;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+
+.submit-button:disabled {
+  background: #a5b4fc;
+  cursor: not-allowed;
+}
+
+/* Login prompt */
+.feedback-login-prompt {
+  text-align: center;
+  font-size: 1rem;
+  color: #4b5563;
+  margin-top: 1.5rem;
+}
+
+.login-link {
+  color: #2563eb;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}

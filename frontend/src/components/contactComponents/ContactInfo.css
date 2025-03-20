@@ -1,0 +1,134 @@
+/* Container */
+.contact-container {
+    padding: 24px;
+    max-width: 550px;
+    margin: auto;
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: var(--secondary-background-color);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-image: url('../../assets/volume-abstract-graphic-loneliness-desk.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Title */
+.contact-title {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 18px;
+    color: var(--heading-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Content */
+.contact-content {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Contact Item */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 12px;
+    background:var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Icon */
+.contact-icon {
+    width: 28px;
+    height: 28px;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+/* Subtitle */
+.contact-subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 6px;
+}
+
+/* Contact Text */
+.contact-text {
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Links */
+.contact-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--btn-color);
+    text-decoration: underline;
+}
+
+/* Social Media Section */
+.contact-social {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+}
+
+/* Social Links */
+.social-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: var(--secondary-color);
+}
+
+.social-link:hover {
+    background: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.social-icon{
+    width: 22px;
+    height: 22px;
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-container {
+        max-width: 90%;
+        padding: 20px;
+    }
+}

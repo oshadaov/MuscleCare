@@ -1,0 +1,70 @@
+/* BookingList.css */
+
+.booking-table-container {
+    min-width: 575px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-image: url('../../assets/volume-abstract-graphic-loneliness-desk.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .booking-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--heading-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .booking-table {
+background-color: var(--background-color);
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var( --text-color);
+  }
+  
+  .booking-table th,
+  .booking-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .booking-table th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+  }
+  
+  .booking-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  
+  .status-pending {
+    background-color: #fef3c7;
+    color: #92400e;
+  }
+  
+  .status-confirmed {
+    background-color: #d1fae5;
+    color: #065f46;
+  }
+  
+  .status-cancelled {
+    background-color: #fee2e2;
+    color: #991b1b;
+  }

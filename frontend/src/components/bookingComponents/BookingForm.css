@@ -1,0 +1,138 @@
+.booking-container {
+  max-width: 800px;
+  min-width: 450px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    background-image: url('../../assets/volume-abstract-graphic-loneliness-desk.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+  }
+  
+  .booking-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: var(--heading-color);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .booking-error {
+    color: #ef4444;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .booking-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .booking-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  
+  
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .booking-form label {
+    font-weight: 500;
+    color: var(--heading-color);
+  }
+  
+  .booking-form input,
+  .booking-form select {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    color: var(--heading-color);
+    border: 1px solid #d1d5db;
+    background:var(--background-color);
+
+  }
+  .booking-form input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.3);
+  }
+  .booking-form button {
+    padding: 0.75rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  
+  .booking-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .booking-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .booking-list-item:last-child {
+    border-bottom: none;
+  }
+  
+  
+  
+  .treatment-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .treatment-option {
+    text-align: center;
+  }
+  
+  .treatment-option input[type="radio"] {
+    display: none;
+  }
+  
+  .treatment-option label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem;
+    border: 2px solid #d1d5db;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .treatment-option input[type="radio"]:checked + label {
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-background-color);
+  }
+  
+  .treatment-option img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .treatment-option span {
+    font-size: 0.875rem;
+  }
+  
+  

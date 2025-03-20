@@ -1,0 +1,101 @@
+.image-rotator-container {
+    display: flex;
+   
+    gap: 60px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  .image-rotator-item {
+    transition: all 0.5s ease-in-out;
+    transform-origin: center;
+  }
+  
+  .image-rotator-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-rotator-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .image-rotator-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .image-rotator-number {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #2563eb;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .image-rotator-error {
+    text-align: center;
+    color: #ef4444;
+    padding: 20px;
+    font-size: 16px;
+  }
+  
+  /* Animation for the rotation */
+  .position-0 {
+    animation: highlight 3s infinite;
+    animation-delay: 0s;
+  }
+  
+  .position-1 {
+    animation: highlight 3s infinite;
+    animation-delay: 0.75s;
+  }
+  
+  .position-2 {
+    animation: highlight 3s infinite;
+    animation-delay: 1.5s;
+  }
+  
+  .position-3 {
+    animation: highlight 3s infinite;
+    animation-delay: 2.25s;
+  }
+  
+  @keyframes highlight {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.05);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .image-rotator-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
+  
+    .image-rotator-img {
+      height: 180px;
+    }
+  }
+  
+  

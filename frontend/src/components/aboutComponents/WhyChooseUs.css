@@ -1,0 +1,42 @@
+/* WhyChooseUs.css */
+.why-choose-section {
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 4rem 0;
+
+  }
+  
+  .why-choose-title {
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--heading-color);
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .why-choose-list {
+    list-style: none;
+    padding: 0;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  
+  .why-choose-list li {
+    font-size: 1.1rem;
+    color:var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+  }
+  
+  .why-choose-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+  }
+  
