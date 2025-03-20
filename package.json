@@ -1,0 +1,24 @@
+{
+    "name": "muscle-care",
+    "version": "1.0.0",
+    "private": true,
+    "workspaces": [
+        "frontend",
+        "backend",
+        "admin"
+    ],
+    "scripts": {
+        "start": "cd frontend && npm start",
+        "build": "cd frontend && npm run build",
+        "install:frontend": "cd frontend && npm install",
+        "install:backend": "cd backend && npm install",
+        "install:admin": "cd admin && npm install",
+        "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\""
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.0"
+    },
+    "dependencies": {
+        "muscle-care": "file:"
+    }
+}
