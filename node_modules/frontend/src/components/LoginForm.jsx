@@ -21,7 +21,7 @@ function LoginForm({ setIsLoggedIn }) {
       const response = await api.post("/auth/login", credentials)
       localStorage.setItem("token", response.data.token)
       setIsLoggedIn(true)
-      navigate("/videos")
+      navigate("/")
     } catch (err) {
       setError(err.response?.data?.message || "An error occurred during login")
     }
