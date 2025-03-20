@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { Star } from "lucide-react";
 import api from "../../utils/api";
-import "./FeedbackList.css";
+import "./Feedbacklist.css";
 
 function FeedbackList() {
   const [feedbacks, setFeedbacks] = useState([]);
