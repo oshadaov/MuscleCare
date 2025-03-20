@@ -6,7 +6,7 @@ import AboutContent from "../../components/aboutComponents/AboutContent"
 import "./About.css"
 import Mission from "../../components/aboutComponents/Vision"
 import WhyChooseUs from "../../components/aboutComponents/WhyChooseUs"
-import FindUs from "../../components/location/Findus"
+import FindUs from "../../components/location/FindUs"
 
 
 function About({images}) {

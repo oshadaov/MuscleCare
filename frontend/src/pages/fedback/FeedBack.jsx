@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import FeedbackForm from "../../components/feedbackComponents/FeedbackForm"
 import api from "../../utils/api"
-import "./Feedback.css"
+import "./FeedBack.css"
 import DP from '../../assets/Dr.jpg'
 import FeedbackList from "../../components/feedbackComponents/Feedbacklist"
 import ContentContainer from "../../components/ContentContainer"
