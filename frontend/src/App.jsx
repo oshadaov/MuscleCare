@@ -14,7 +14,7 @@ import Feedback from "./pages/fedback/FeedBack"
 import Service from "./pages/service/Service"
 import ServiceDetail from "./components/ServiceDetail"
 import Therapist from "./pages/therapist/Therapist"
-import FindUs from "./components/location/Findus"
+import FindUs from "./components/location/FindUs"
 import YouTubeVideos from "./components/YouTubeVideos" 
 import useAutoRefresh from "./hooks/useAutoRefresh"
 

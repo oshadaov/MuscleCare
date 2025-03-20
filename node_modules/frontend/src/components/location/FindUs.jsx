@@ -1,4 +1,3 @@
-import React from "react";
 import MapEmbed from "./MapEmbed"; // Import the reusable component
 import "./FindUs.css";
 
