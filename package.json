@@ -9,7 +9,7 @@
     ],
     "scripts": {
         "start": "cd frontend && npm start",
-        "build": "cd frontend && npm run build",
+        "build": "cd frontend && npm install --no-optional && npm run build",
         "install:frontend": "cd frontend && npm install",
         "install:backend": "cd backend && npm install",
         "install:admin": "cd admin && npm install",
