@@ -1,0 +1,178 @@
+/* @import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities"; */
+
+:root {
+    --primary-color:#2563eb;  /* Deep navy blue */
+    --accent-color: #10b981;   /* Soft cyan */
+  
+  --secondary-color: #1d4ed8;
+  --background-color: #f3f4f6;
+  --text-color: #6b7280;
+  --error-color: #ef4444;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --secondary-background-color:#e5e7eb;
+  --heading-color:#1f2937;
+  --btn-color: #1e3a8a
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+   background-image: url('./assets/bgm.jpg'); 
+  background-repeat: no-repeat;
+background-color: var(--background-color);
+background-size: cover;
+
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+height: 100%;
+/* background-color: var(--secondary-background-color); */
+}
+
+/* Base button styles (you already have these) */
+.btn {
+  display: inline-block;
+  padding: 0.75rem;
+ 
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Primary button (you already have this) */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-color);
+}
+
+/* Secondary button */
+.btn-secondary {
+  background-color: var(--secondary-background-color);
+  color: var(--heading-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--btn-color);
+}
+
+/* Success button */
+.btn-success {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #0d9668; /* Darker green on hover */
+}
+
+/* Warning button */
+.btn-warning {
+  background-color: var(--warning-color);
+  color: white;
+}
+
+.btn-warning:hover {
+  background-color: #d97706; /* Darker yellow on hover */
+}
+
+/* Danger button (you already have this, but I noticed the hover color doesn't match your scheme) */
+.btn-danger {
+  background-color: var(--error-color);
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #dc2626; /* Darker red on hover */
+}
+
+/* Outline buttons */
+.btn-outline-primary {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-outline-danger {
+  background-color: transparent;
+  color: var(--error-color);
+  border: 1px solid var(--error-color);
+}
+
+.btn-outline-danger:hover {
+  background-color: var(--error-color);
+  color: white;
+}
+
+/* Button sizes */
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.btn-lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+
+/* Disabled button */
+.btn:disabled, .btn.disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Full width button */
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* Button with icon */
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Rounded button */
+.btn-rounded {
+  border-radius: 9999px;
+}
+
+/* Text button (no background) */
+.btn-text {
+  background-color: transparent;
+  color: var(--primary-color);
+  padding: 0.25rem 0.5rem;
+}
+
+.btn-text:hover {
+  background-color: rgba(37, 99, 235, 0.1);
+}

@@ -1,0 +1,84 @@
+.feedback-section {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .feedback-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .feedback-loading,
+  .feedback-error,
+  .feedback-empty {
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .feedback-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+  }
+  
+  .feedback-item {
+    background-image: url('../../assets/bgm.jpg');
+    background-image: url('../../assets/volume-abstract-graphic-loneliness-desk.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    background-color: var(--secondary-background-color);
+
+  }
+  
+  .feedback-stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .star-filled {
+    color: #f4b400;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .star-empty {
+    color: #ddd;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .feedback-comment {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    word-wrap: break-word; /* Ensures long words break */
+    overflow-wrap: break-word; /* Alternative for compatibility */
+    white-space: normal; /* Allows text to wrap to the next line */
+    height: 200px; /* Optional: Limits excessive height */
+    overflow-y: auto; /* Adds scroll if too long */
+}
+
+  
+  .feedback-user {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,51 @@
+/* AboutContent.css */
+.about-section {
+   
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 3rem 0;
+
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--heading-color);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .about-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .about-image {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-text {
+    flex: 1;
+    text-align: left;
+    max-width: 50%;
+  }
+  
+  .about-text p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  

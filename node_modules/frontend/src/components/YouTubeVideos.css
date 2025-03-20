@@ -1,0 +1,97 @@
+.youtube-container {
+  padding: 0 20px;
+}
+.youtube-section{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.youtube-heading {
+  color: #1f2937;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.youtube-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.youtube-videos-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px; /* Increased max width */
+  margin: 0 auto;
+}
+
+/* Enlarged Video Card */
+.youtube-video-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 650px; /* Increased max width */
+  height: auto;
+}
+
+
+
+
+.youtube-video-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Enlarged Responsive Iframe */
+.youtube-video-responsive {
+  position: relative;
+  padding-bottom: 50%; /* Adjusted Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.youtube-video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px;
+  height: 100%;
+  border: 0;
+}
+
+
+
+
+
+/* Loading & Error Messages */
+.youtube-loading,
+.youtube-error,
+.youtube-no-videos {
+  text-align: center;
+  font-size: 20px;
+  padding: 40px 0;
+}
+
+/* Media query for larger screens */
+@media (min-width: 1024px) {
+  .youtube-grid {
+      justify-content: center;
+  }
+
+  .youtube-video-card {
+      max-width: 700px;
+  }
+
+  .youtube-video-responsive {
+      padding-bottom: 45%; /* Slightly larger */
+  }
+}
+
+
