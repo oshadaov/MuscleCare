@@ -15,7 +15,7 @@ export const createRotatorImage = async (imageData) => {
   // Create FormData object to send the file
   const formData = new FormData()
 
-  // Append text fields
+  // Append text fields f
   formData.append("title", imageData.title)
   formData.append("position", imageData.position)
   formData.append("active", imageData.active)
