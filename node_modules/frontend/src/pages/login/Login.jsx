@@ -1,6 +1,6 @@
 import LoginForm from "../../components/LoginForm"
 import "./Login.css"
-import DP from '../../assets/Bg.jpg'
+// import DP from '../../assets/Bg.jpg'
 import ContentContainer from "../../components/ContentContainer"
 
 function Login({ setIsLoggedIn }) {
