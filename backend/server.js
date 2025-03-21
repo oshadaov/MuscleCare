@@ -32,7 +32,12 @@ const __dirname = path.dirname(__filename)
 
 // Serve uploaded files
 app.use("/uploads", express.static(path.join(__dirname, "uploads")))
-
+if (!process.env.MONGODB_URI) {
+  console.error("❌ MONGODB_URI is missing! Set it in environment variables.");
+  process.exit(1);
+}else{
+  console.log("Yes")
+}
 // Connect to MongoDB
 mongoose
   .connect(process.env.MONGODB_URI)
