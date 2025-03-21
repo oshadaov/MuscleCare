@@ -44,9 +44,10 @@ mongoose
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("Could not connect to MongoDB", err))
 
-  app.get("/",(res,req)=>{
-    console.log("yes")
-  })
+  app.get("/", (req, res) => {
+    res.send("Hello, World!");
+});
+
 // Client Routes
 app.use("/api/auth", authRoutes)
 app.use("/api/booking", bookingRoutes)
