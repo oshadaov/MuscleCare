@@ -6,7 +6,7 @@ import { useEffect } from "react"
  * Hook to automatically refresh the page after a specified interval
  * @param {number} refreshInterval - Refresh interval in milliseconds (default: 60000ms = 1 minute)
  */
-const useAutoRefresh = (refreshInterval = 30000) => {
+const useAutoRefresh = (refreshInterval = 120000) => {
   useEffect(() => {
     // Set up the timer
     const timer = setTimeout(() => {

@@ -26,7 +26,7 @@ const PrivateRoute = ({ children }) => {
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
-  useAutoRefresh(60000) // 60000ms = 1 minute
+  useAutoRefresh(120000) // 
 
   useEffect(() => {
     const token = localStorage.getItem("token")
