@@ -67,3 +67,20 @@
     background-color: var(--secondary-color);
   }
 
+  @media (max-width: 480px) {
+    .header-logo {
+      font-size: 2rem;
+    }
+  
+    .header-logo img {
+      width: 60px;
+    }
+  
+    .header-menu {
+      gap: 0.3rem;
+    }
+  
+    .header-link {
+      font-size: 0.9rem;
+    }
+  }

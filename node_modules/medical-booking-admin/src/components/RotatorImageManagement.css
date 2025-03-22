@@ -1,0 +1,297 @@
+.rotator-management {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .rotator-management-title {
+    color: #1f2937;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e5e7eb;
+  }
+  
+  .rotator-list-title {
+    margin-top: 40px;
+  }
+  
+  .rotator-form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    color: #1f2937;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  .form-help-text {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  
+  .btn-save,
+  .btn-cancel,
+  .btn-edit,
+  .btn-delete {
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+  }
+  
+  .btn-save {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .btn-save:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .btn-save:disabled {
+    background-color: #93c5fd;
+    cursor: not-allowed;
+  }
+  
+  .btn-cancel {
+    background-color: #e5e7eb;
+    color: #1f2937;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #d1d5db;
+  }
+  
+  .image-preview {
+    margin-top: 20px;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 20px;
+  }
+  
+  .image-preview h3 {
+    color: #1f2937;
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  
+  .image-preview-container {
+    max-width: 400px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-preview-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .loading {
+    text-align: center;
+    color: #6b7280;
+    padding: 40px 0;
+    font-size: 18px;
+  }
+  
+  .rotator-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .rotator-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .rotator-item.inactive {
+    opacity: 0.7;
+    border-left: 4px solid #ef4444;
+  }
+  
+  .rotator-item-content {
+    padding: 16px;
+    flex-grow: 1;
+  }
+  
+  .rotator-item h3 {
+    color: #2563eb;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .rotator-description {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+  
+  .rotator-meta {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  .rotator-status {
+    font-weight: 500;
+  }
+  
+  .rotator-thumbnail {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 12px;
+  }
+  
+  .rotator-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .rotator-thumbnail img:hover {
+    transform: scale(1.05);
+  }
+  
+  .rotator-actions {
+    display: flex;
+    padding: 12px 16px;
+    background-color: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .btn-edit,
+  .btn-delete {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .btn-edit {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    margin-right: 8px;
+  }
+  
+  .btn-edit:hover {
+    background-color: #e5e7eb;
+  }
+  
+  .btn-delete {
+    background-color: #fee2e2;
+    color: #ef4444;
+  }
+  
+  .btn-delete:hover {
+    background-color: #fecaca;
+  }
+  
+  .no-images {
+    text-align: center;
+    color: #6b7280;
+    padding: 40px 0;
+    font-size: 16px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    border: 1px dashed #d1d5db;
+  }
+  
+  /* Media queries for responsive design */
+  @media (min-width: 768px) {
+    .rotator-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .rotator-item {
+      flex-direction: column;
+    }
+  
+    .rotator-actions {
+      flex-direction: row;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .rotator-management-title {
+      font-size: 28px;
+    }
+  
+    .form-actions {
+      justify-content: flex-start;
+    }
+  }
+  
+  
