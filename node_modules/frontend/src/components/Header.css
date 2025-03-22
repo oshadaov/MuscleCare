@@ -1,86 +1,138 @@
-
-
 .containers {
   margin: 0 auto;
   padding: 0 1rem;
   max-width: 1200px;
-
 }
 
+/* Header */
 .header {
   background-color: var(--primary-color);
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  /* background-image: url('../assets/volume-abstract-graphic-loneliness-desk.jpg');
-  background-size: cover;
-  background-repeat: no-repeat; */
+  padding: 0.7rem 1rem;
+  overflow: hidden; /* Prevents extra width issue */
+}
 
+/* Navigation */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 0;
+  position: relative;
+}
+
+/* Logo */
+.header-logo img {
+  width: 80px;
+}
+
+/* Menu */
+.header-menu {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Links */
+.header-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
 }
 
 .header-link:hover {
   color: var(--accent-color);
 }
-  
-  .header-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.7rem 0;
 
-  }
-  
-  .header-logo {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
+/* Button */
+.btnn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: var(--secondary-color);
+}
+
+/* 🔥 Hamburger Menu */
+.menu-toggle {
+  display: none;
+  background-color: blueviolet;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 1000;
+}
+
+.menu-toggle .bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 2px;
+}
+
+/* Hamburger Animation */
+.menu-toggle.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.menu-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* 🔥 Mobile & Tablet Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
     display: flex;
-    
   }
-  .header-logo img{
-    width: 80px;
-  }
-  
+
   .header-menu {
-    display: flex;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
     gap: 1rem;
-    list-style: none;
-  }
-  
-  .header-link {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-  }
-  
-  .header-link:hover {
-    color: var(--accent-color);
-  }
-  .btnn{
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.25rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    background-color: var(--secondary-color);
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 2;
   }
 
-  @media (max-width: 480px) {
-    .header-logo {
-      font-size: 2rem;
-    }
-  
-    .header-logo img {
-      width: 60px;
-    }
-  
-    .header-menu {
-      gap: 0.3rem;
-    }
-  
-    .header-link {
-      font-size: 0.9rem;
-    }
+  .header-menu.active {
+    width: 250px;
+    padding: 1rem 0;
+    transform: translateX(0);
+    background: var(--primary-color);
+    opacity: 5;
   }
+
+  /* 🔥 Fix: Ensure text is readable */
+  .header-link {
+    font-size: 1rem;
+    display: block;
+    padding: 0.5rem 0;
+    color: white; /* 🛠️ Fix: Ensure text is white */
+    font-weight: 600; /* Make text bold */
+    background-color: brown;
+  }
+
+  .header-link:hover {
+    color: var(--accent-color); /* Change color on hover */
+  }
+  .menu-toggle .bar {
+    background-color: rgb(52, 28, 176);
+    transition: 0.4s;
+    border-radius: 2px;
+  }
+}
+

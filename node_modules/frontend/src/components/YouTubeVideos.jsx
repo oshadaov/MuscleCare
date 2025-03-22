@@ -64,8 +64,7 @@ const YouTubeVideos = () => {
                 <div key={video._id} className="youtube-card">
                   <div className="youtube-video-container">
                   <iframe
-                    width="410"
-                    height="230"
+                    
                     src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0&modestbranding=1&disablekb=1&rel=0&playsinline=1&loop=1&playlist=${videoId}&fs=0&iv_load_policy=3&showinfo=0`}
                     frameBorder="0"
                     allow="autoplay; encrypted-media"

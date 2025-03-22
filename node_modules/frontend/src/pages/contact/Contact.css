@@ -26,6 +26,7 @@ padding: 3rem 0;
   .contact-Section {
     grid-template-columns: 1fr; /* Single column on smaller screens */
   }
+  
 }
 .lastCenter{
   color: var(--heading-color);
@@ -81,8 +82,9 @@ padding: 3rem 0;
   @media (max-width: 768px) {
     .contact-content {
       flex-direction: column;
+      
     }
-  
+ 
     .contact-info,
     .contact-form {
       flex: none;
@@ -90,7 +92,5 @@ padding: 3rem 0;
     }
   }
   
-  .grid{
-    max-width: 600px;
-  }
+
   
